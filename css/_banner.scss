@@ -6,6 +6,9 @@
     height: 100vh;
     width: 100%;
 
+    animation-name: showBanner;
+    animation-duration: 2s;
+
     &__background {
         display: flex;
         justify-content: center;
@@ -19,5 +22,14 @@
             text-align: center;
             color: rgba(255, 255, 255, 0.658);
         }
+    }
+}
+
+@keyframes showBanner {
+    from {
+        filter: blur(4px);
+    }
+    to {
+        filter: blur(0);
     }
 }
