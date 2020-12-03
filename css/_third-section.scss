@@ -1,72 +1,26 @@
+@import './first-section';
+
 .third-section {
-    width: 100%;
-    height: 100vh;
-    min-height: 100vh;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-image: url('../images/banner3.jpg');
 
     &__background {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: rgba(0, 0, 0, 0.322);
-        height: 100vh;
-
+        @extend .first-section__background;
         &__container {
-            font-family: "Open Sans", Arial, Helvetica, sans-serif;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: rgba(0, 0, 0, 0.658);
-            max-width: 1000px;
-            width: 80vw;
-            padding: 10px;
+            @extend .first-section__background__container;
 
             &__h2 {
-                font-size: 20px;
-                font-weight: 200;
-                text-align: center;
-                text-transform: uppercase;
-                color: white;
+                @extend .first-section__background__container__h2;
             }
-
             &__h3 {
-                font-weight: 100;
-                color: rgba(255, 255, 255, 0.507);
-                margin: 5px 0;
+                @extend .first-section__background__container__h3;
             }
-
             &__p {
-                font-size: 18px;
-                text-align: center;
-                line-height: 25px;
-                color: rgba(255, 255, 255, 0.596);
-                margin-top: 10px;
+                @extend .first-section__background__container__p;
             }
-
             &__button {
-                font-weight: 600;
-                font-size: 16px;
-                color: white;
-                padding: 15px 20px;
-                margin-top: 10px;
-                width: 90%;
-                max-width: 150px;
-                text-transform: uppercase;
-                border: 1px solid rgba(255, 255, 255, 0.24);
-                border-radius: 4px;
-                background-color: transparent;
-                transition: 0.4s ease;
-
-                &:hover {
-                    background-color: rgba(255, 255, 255, 0.048);
-                }
+                @extend .first-section__background__container__button
             }
         }
+
     }
 }
 

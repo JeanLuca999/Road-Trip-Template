@@ -1,4 +1,4 @@
-.first-section {
+.first-section, .second-section, .third-section, .fourth-section {
     width: 100%;
     min-height: 100vh;
     background-attachment: fixed;
@@ -69,8 +69,18 @@
     }
 }
 
+.second-section {
+    background-image: url('../images/banner2.jpg');
+}
+.thrid-section {
+    background-image: url('../images/banner3.jpg');
+}
+.fourth-section {
+    background-image: url('../images/banner4.jpg');
+}
+
 @media(min-width:700px) {
-    .first-section__background__container {
+    .first-section, .second-section, .thrid-section, .fourth-section  {
         padding: 50px 10px;
 
         &__p {
