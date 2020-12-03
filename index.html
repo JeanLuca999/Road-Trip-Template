@@ -104,20 +104,24 @@
             <h2 class="footer__form__h2">
                 Contact Me
             </h2>
-            <label for="name">
-                Name
-                <input type="text" id="name">
-            </label>
-            <label for="email">
-                Email
-                <input type="text" id="email">
-            </label>
-            <label for="txtarea">
-                Message
-                <textarea id="txtarea" cols="30" rows="10">
-                </textarea>
-            </label>
-            <button type="submit">Send Message</button>
+            <div class="footer__form__container">
+                <label for="name" class="footer__form__container__name">
+                    Name
+                    <input type="text" id="name" placeholder="Name">
+                </label>
+
+                <label for="email" class="footer__form__container__email">
+                    Email
+                    <input type="text" id="email" placeholder="Email">
+                </label>
+
+                <label for="message" class="footer__form__container__txtarea">
+                    Message
+                    <textarea id="message" cols="39" rows="10" placeholder="Message"></textarea>
+                </label>
+
+                <button type="submit" class="footer__form__container__button">Send Message</button>
+            </div>
         </form>
     </footer>
 
