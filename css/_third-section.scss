@@ -1,10 +1,10 @@
-.first-section {
+.third-section {
     width: 100%;
     height: 100vh;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    background-image: url('../images/banner1.jpg');
+    background-image: url('../images/banner3.jpg');
 
     &__background {
         display: flex;
@@ -70,7 +70,7 @@
 }
 
 @media(min-width:700px) {
-    .first-section__background__container {
+    .third-section__background__container {
         padding: 50px 10px;
 
         &__p {
