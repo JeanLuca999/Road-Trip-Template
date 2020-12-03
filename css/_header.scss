@@ -4,7 +4,7 @@
     right: 0;
     width: 100%;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: transparent;
 
     &__menu {
         display: flex;
@@ -19,6 +19,11 @@
         margin-left: auto;
         background-color: rgba(255, 255, 255, 0.15);
 
+        &:hover {
+            background-color: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
         &__barra {
             position: relative;
             width: 15px;
@@ -30,5 +35,46 @@
                 margin-top: 0;
             }
         }
+    }
+
+    
+    &__ul {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        background-color: #f64242;
+        
+        width: 100%;
+        max-width: 300px;
+        transition: 0.4s ease;
+        
+        
+        &__li {
+            margin-top: 20px;
+            list-style-type: none;
+            padding: 20px;
+            padding-left: 0;
+            margin-left: 20px;
+            margin-right: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.418);
+            
+            &:first-child {
+                margin-top: 50px;
+            }
+            &:last-child {
+                border-bottom: none;
+            }
+            
+            a {
+                font-family: "Open Sans", Arial, Helvetica, sans-serif;
+                color: rgba(255, 255, 255, 0.904);
+                display: block;
+                text-decoration: none;
+            }
+        }
+    }
+    &__ul--active {
+        right: -0%;
     }
 }

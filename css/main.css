@@ -4,7 +4,7 @@
   right: 0;
   width: 100%;
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: transparent;
 }
 
 .header__menu {
@@ -30,6 +30,11 @@
   background-color: rgba(255, 255, 255, 0.15);
 }
 
+.header__menu:hover {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
 .header__menu__barra {
   position: relative;
   width: 15px;
@@ -40,6 +45,47 @@
 
 .header__menu__barra:first-child {
   margin-top: 0;
+}
+
+.header__ul {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  background-color: #f64242;
+  width: 100%;
+  max-width: 300px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.header__ul__li {
+  margin-top: 20px;
+  list-style-type: none;
+  padding: 20px;
+  padding-left: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.418);
+}
+
+.header__ul__li:first-child {
+  margin-top: 50px;
+}
+
+.header__ul__li:last-child {
+  border-bottom: none;
+}
+
+.header__ul__li a {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  color: rgba(255, 255, 255, 0.904);
+  display: block;
+  text-decoration: none;
+}
+
+.header__ul--active {
+  right: -0%;
 }
 
 * {
@@ -79,7 +125,7 @@
 
 .first-section {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -122,7 +168,7 @@
   background-color: rgba(0, 0, 0, 0.658);
   max-width: 1000px;
   width: 80vw;
-  padding: 20px 10px;
+  padding: 10px;
 }
 
 .first-section__background__container__h2 {
@@ -179,6 +225,7 @@
 .second-section {
   width: 100%;
   height: 100vh;
+  min-height: 100vh;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -221,7 +268,7 @@
   background-color: rgba(0, 0, 0, 0.658);
   max-width: 1000px;
   width: 80vw;
-  padding: 20px 10px;
+  padding: 10px;
 }
 
 .second-section__background__container__h2 {
@@ -278,6 +325,7 @@
 .third-section {
   width: 100%;
   height: 100vh;
+  min-height: 100vh;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -320,7 +368,7 @@
   background-color: rgba(0, 0, 0, 0.658);
   max-width: 1000px;
   width: 80vw;
-  padding: 20px 10px;
+  padding: 10px;
 }
 
 .third-section__background__container__h2 {
@@ -377,6 +425,7 @@
 .fourth-section {
   width: 100%;
   height: 100vh;
+  min-height: 100vh;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -419,7 +468,7 @@
   background-color: rgba(0, 0, 0, 0.658);
   max-width: 1000px;
   width: 80vw;
-  padding: 20px 10px;
+  padding: 10px;
 }
 
 .fourth-section__background__container__h2 {
