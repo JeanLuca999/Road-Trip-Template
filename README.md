@@ -1,4 +1,4 @@
-# Road-Trip-Layout
+# Road-Trip-Template
  Cópia de um template utilizando HTML, Sass e JavaScript
 * O site contém efeito parallax <br>
 * Está responsivo
